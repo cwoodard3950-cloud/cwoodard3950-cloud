@@ -10,6 +10,19 @@ I like engineering I can put my hands on. I'm a mechanical engineering student a
 
 Most of my projects mix CAD and physical parts with software that removes the repetitive work. I'm an engineer first, so I build that software with AI.
 
+## Featured: [Lab Grader](https://github.com/cwoodard3950-cloud/lab-grader-releases)
+
+**A desktop app that cut my review time from about 15 minutes to 3 per lab report, with a person still checking every score.** I grade about 20 Thermodynamics group lab reports a week as a TA, and I built this with AI to handle them.
+
+<a href="https://github.com/cwoodard3950-cloud/lab-grader-releases"><img src="assets/grader.svg" width="560" alt="" /></a>
+
+- **Suggests, never decides:** the Claude API proposes a score for each rubric criterion and shows its reasoning and the spot in the report behind it. I approve or change every one.
+- **Protects students:** it removes cover pages and redacts names, emails and ID numbers before a report is sent to the AI. The text is deleted, not just covered.
+- **Fits the real workflow:** it imports Canvas rosters, grades against each lab's own instructions, compares resubmissions with the first attempt, and exports files for Canvas import.
+- **Ships like a product:** a Windows installer with automatic updates, at roughly 5–10¢ per report. [Download the latest release](https://github.com/cwoodard3950-cloud/lab-grader-releases/releases/latest).
+
+`Claude API` `Electron` `Canvas`
+
 ## Selected projects
 
 <table>
@@ -22,21 +35,14 @@ Most of my projects mix CAD and physical parts with software that removes the re
       <code>YOLO</code> <code>Raspberry Pi</code> <code>MAVLink</code> <code>SolidWorks</code> <code>Ansys</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/cwoodard3950-cloud/lab-grader-releases"><img src="assets/grader.svg" width="100%" alt="" /></a>
-      <h3>Lab Grader</h3>
-      <sub>Built with AI for my Thermodynamics TA job · <a href="https://github.com/cwoodard3950-cloud/lab-grader-releases/releases/latest">download</a></sub>
-      <p>A desktop app that suggests a score for each rubric criterion and shows the reasoning and the spot in the report behind it. It redacts student names before anything is sent, I review every score, and it exports Canvas import files. Review time fell from about 15 minutes to 3 per report.</p>
-      <code>Claude API</code> <code>Electron</code> <code>Canvas</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <a href="https://cwoodard3950-cloud.github.io/#doe"><img src="assets/doe.svg" width="100%" alt="" /></a>
       <h3>Paste-print DOE for solderability</h3>
       <sub>pSemi internship · Summer 2026</sub>
       <p>A designed experiment to make die-level solderability testing repeatable on 75 µm bumps, against JEDEC J-STD-002D. Three print factors, with all main effects and two-factor interactions: 16 base runs plus 3 center points.</p>
       <code>JMP</code> <code>Paste printer</code> <code>Heller reflow</code> <code>FineTech bonder</code>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://cwoodard3950-cloud.github.io/#reflow"><img src="assets/reflow.svg" width="100%" alt="" /></a>
       <h3>Reflow wetting failure root cause</h3>
@@ -44,21 +50,12 @@ Most of my projects mix CAD and physical parts with software that removes the re
       <p>Traced a wetting failure on 75 µm-bump die. I measured the actual zone profiles with a KIC thermal profiler, then adjusted the oven setpoints to bring the process window index back within spec.</p>
       <code>KIC profiler</code> <code>Heller reflow</code> <code>Keyence</code> <code>Root cause analysis</code>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <a href="https://cwoodard3950-cloud.github.io/fe-study-feed/"><img src="assets/feed.svg" width="100%" alt="" /></a>
       <h3>FE Study Feed</h3>
       <sub>Built with AI · <a href="https://cwoodard3950-cloud.github.io/fe-study-feed/">try it</a> · <a href="https://github.com/cwoodard3950-cloud/fe-study-feed">repo</a></sub>
       <p>A swipe-to-study feed for the FE Mechanical exam that fills the same phone habit as scrolling. Quizzes, flashcards, formulas and handbook drills, with weak topics coming up more often.</p>
       <code>SwiftUI</code> <code>Web app</code> <code>FE Mechanical</code>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://cwoodard3950-cloud.github.io/#pump"><img src="assets/pump.svg" width="100%" alt="" /></a>
-      <h3>Remanufacturing a miniature gear pump</h3>
-      <sub>EGR 344 · team of 4 · Fall 2025</sub>
-      <p>Measured a purchased 12 V gear pump, rebuilt it in CAD and printed a working copy in PLA. It moved 0.50 L/min against the original's 1.63 and cost 19.9% less, but about 2.6 times as much per unit of flow.</p>
-      <code>FARO arm</code> <code>SolidWorks</code> <code>3D printing</code>
     </td>
   </tr>
 </table>
@@ -67,6 +64,7 @@ Most of my projects mix CAD and physical parts with software that removes the re
 
 | Project | What it is |
 |---|---|
+| [**Miniature gear pump**](https://cwoodard3950-cloud.github.io/#pump) | Measured a purchased 12 V gear pump, rebuilt it in CAD and printed a working copy in PLA. It moved 0.50 L/min against the original's 1.63 and cost 19.9% less, but about 2.6 times as much per unit of flow. Team of 4. |
 | [**SiP package 3D model**](https://cwoodard3950-cloud.github.io/#sip) | A layer-by-layer SolidWorks model of a flip-chip die and bump stack, built from GDS layout files as the input to an Ansys Mechanical thermo-mechanical simulation. |
 | [**Access Storage**](https://cwoodard3950-cloud.github.io/#access) | A hand-cranked, chain-driven carousel that brings overhead garage storage within reach. Junior design, team of 6. |
 | **Home server** | An Intel NUC on Ubuntu where I'm learning DevOps: Pi-hole and Uptime Kuma in Docker Compose, nightly and offsite backups, Discord alerts, and a custom status dashboard. |
