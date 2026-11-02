@@ -1,0 +1,99 @@
+<a href="https://cwoodard3950-cloud.github.io/"><img src="assets/banner.svg" width="100%" alt="Carson Woodard, Mechanical Engineer. Cal Baptist B.S. Mechanical Engineering with an Industrial Systems Engineering minor. Manufacturing Sustaining Intern at pSemi. Open to full-time roles in 2027." /></a>
+
+<p align="center">
+  <a href="https://cwoodard3950-cloud.github.io/"><img src="https://img.shields.io/badge/Portfolio-f0531c?style=for-the-badge" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/carsonwoodard"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
+  <a href="mailto:carsonwoodard3950@gmail.com"><img src="https://img.shields.io/badge/Email-57606a?style=for-the-badge" alt="Email" /></a>
+</p>
+
+I like engineering I can put my hands on. I'm a mechanical engineering student at California Baptist University, graduating April 2027 with a minor in Industrial Systems Engineering, and I'm working on a semiconductor manufacturing line at pSemi, a Murata company.
+
+Most of my projects mix CAD and physical parts with software that removes the repetitive work. I'm an engineer first, so I build that software with AI.
+
+## Selected projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://cwoodard3950-cloud.github.io/#haps"><img src="assets/haps.svg" width="100%" alt="" /></a>
+      <h3>HAPS Counter UAV System</h3>
+      <sub>Senior capstone · team of 8 · in progress</sub>
+      <p>A ground-based system to detect and track fixed-wing drones, then launch an interceptor, for NSWC Corona. I started on the airframe and moved to electrical, where I built a bench setup to validate a custom YOLO model and Raspberry Pi to flight controller communication.</p>
+      <code>YOLO</code> <code>Raspberry Pi</code> <code>MAVLink</code> <code>SolidWorks</code> <code>Ansys</code>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/cwoodard3950-cloud/lab-grader-releases"><img src="assets/grader.svg" width="100%" alt="" /></a>
+      <h3>Lab Grader</h3>
+      <sub>Built with AI for my Thermodynamics TA job · <a href="https://github.com/cwoodard3950-cloud/lab-grader-releases/releases/latest">download</a></sub>
+      <p>A desktop app that suggests a score for each rubric criterion and shows the reasoning and the spot in the report behind it. It redacts student names before anything is sent, I review every score, and it exports Canvas import files. Review time fell from about 15 minutes to 3 per report.</p>
+      <code>Claude API</code> <code>Electron</code> <code>Canvas</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://cwoodard3950-cloud.github.io/#doe"><img src="assets/doe.svg" width="100%" alt="" /></a>
+      <h3>Paste-print DOE for solderability</h3>
+      <sub>pSemi internship · Summer 2026</sub>
+      <p>A designed experiment to make die-level solderability testing repeatable on 75 µm bumps, against JEDEC J-STD-002D. Three print factors, with all main effects and two-factor interactions: 16 base runs plus 3 center points.</p>
+      <code>JMP</code> <code>Paste printer</code> <code>Heller reflow</code> <code>FineTech bonder</code>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://cwoodard3950-cloud.github.io/#reflow"><img src="assets/reflow.svg" width="100%" alt="" /></a>
+      <h3>Reflow wetting failure root cause</h3>
+      <sub>pSemi internship · Summer 2026</sub>
+      <p>Traced a wetting failure on 75 µm-bump die. I measured the actual zone profiles with a KIC thermal profiler, then adjusted the oven setpoints to bring the process window index back within spec.</p>
+      <code>KIC profiler</code> <code>Heller reflow</code> <code>Keyence</code> <code>Root cause analysis</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://cwoodard3950-cloud.github.io/fe-study-feed/"><img src="assets/feed.svg" width="100%" alt="" /></a>
+      <h3>FE Study Feed</h3>
+      <sub>Built with AI · <a href="https://cwoodard3950-cloud.github.io/fe-study-feed/">try it</a> · <a href="https://github.com/cwoodard3950-cloud/fe-study-feed">repo</a></sub>
+      <p>A swipe-to-study feed for the FE Mechanical exam that fills the same phone habit as scrolling. Quizzes, flashcards, formulas and handbook drills, with weak topics coming up more often.</p>
+      <code>SwiftUI</code> <code>Web app</code> <code>FE Mechanical</code>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://cwoodard3950-cloud.github.io/#pump"><img src="assets/pump.svg" width="100%" alt="" /></a>
+      <h3>Remanufacturing a miniature gear pump</h3>
+      <sub>EGR 344 · team of 4 · Fall 2025</sub>
+      <p>Measured a purchased 12 V gear pump, rebuilt it in CAD and printed a working copy in PLA. It moved 0.50 L/min against the original's 1.63 and cost 19.9% less, but about 2.6 times as much per unit of flow.</p>
+      <code>FARO arm</code> <code>SolidWorks</code> <code>3D printing</code>
+    </td>
+  </tr>
+</table>
+
+### More
+
+| Project | What it is |
+|---|---|
+| [**SiP package 3D model**](https://cwoodard3950-cloud.github.io/#sip) | A layer-by-layer SolidWorks model of a flip-chip die and bump stack, built from GDS layout files as the input to an Ansys Mechanical thermo-mechanical simulation. |
+| [**Access Storage**](https://cwoodard3950-cloud.github.io/#access) | A hand-cranked, chain-driven carousel that brings overhead garage storage within reach. Junior design, team of 6. |
+| **Home server** | An Intel NUC on Ubuntu where I'm learning DevOps: Pi-hole and Uptime Kuma in Docker Compose, nightly and offsite backups, Discord alerts, and a custom status dashboard. |
+| **Mochi for Windows** | A Windows port of Mochi, a pixel-critter desktop pet that walks along the taskbar and follows along with Claude Code. Its usage tracking is adapted from Eli Manning's [Ai-Usage](https://github.com/eli-manning/Ai-Usage). |
+| [**Gold solitaire ring**](https://cwoodard3950-cloud.github.io/#ring) | Hand-made from reclaimed 18k gold: cast, rolled and annealed. |
+
+## Experience
+
+| Role | Where | When |
+|---|---|---|
+| **Operations Manufacturing Sustaining Intern** | pSemi, a Murata company | May 2026 – now |
+| **Statics Tutor and Thermodynamics TA** | California Baptist University | Sep 2025 – now |
+| **Parts Manufacturing and Assembly Assistant** | PrintSafe, Inc. | Jun 2024 – Aug 2025 |
+| **Service Room Manager** | Discount Tire | Jul 2022 – Jul 2024 |
+
+## Toolbox
+
+| Area | Tools and methods |
+|---|---|
+| **CAD and analysis** | `SolidWorks` `AutoCAD` `Ansys` `GD&T` `FEA` `VBA macros` |
+| **Process** | `DOE in JMP` `Solder paste printing` `Reflow profiling` `Flip-chip bonding` `Keyence inspection` |
+| **Quality** | `SPC` `FMEA` `8D` `Root cause analysis` `Process capability` `Lean` `J-STD-002D` |
+| **Software** | `MATLAB` `RStudio` `Excel` `Claude API` `Modelio (MBSE)` `Linux` |
+| **Shop** | `Machining` `MIG welding` `Metal casting` `FDM printing` `FARO arm` |
+
+## Away from the desk
+
+I'm usually outside: surfing, running, cycling or swimming. I also work on my '02 Ram 2500 Cummins and my dirt bikes, shoot film, and make things in the shop.
+
+**Open to full-time roles in manufacturing, quality and design from 2027.** [Let's talk.](mailto:carsonwoodard3950@gmail.com)
