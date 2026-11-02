@@ -1,6 +1,6 @@
 # Hi, I'm Carson
 
-I'm a mechanical engineering student at Cal Baptist, graduating in April 2027. This is where I keep the software I've made. I'm not a programmer by training, so I build these with AI, usually because something was taking me too long.
+I'm a mechanical engineering student at Cal Baptist, graduating in April 2027. This is where I keep the software I've made. I'm not a programmer by training, so I build these with AI, usually to try and optimize workflow.
 
 My mechanical engineering work is on [my website](https://cwoodard3950-cloud.github.io/). You can also find me on [LinkedIn](https://www.linkedin.com/in/carsonwoodard) or [email me](mailto:carsonwoodard3950@gmail.com).
 
