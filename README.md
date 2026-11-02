@@ -54,9 +54,3 @@ Next on my list:
 I wanted to study for the FE in the time I'd normally spend scrolling on my phone, so this is a swipeable feed of quiz questions, flashcards and formulas. Topics you keep missing come up more often. [Try it here](https://cwoodard3950-cloud.github.io/fe-study-feed/) or [see the repo](https://github.com/cwoodard3950-cloud/fe-study-feed).
 
 <img src="assets/feed.png" width="520" alt="FE Study Feed home screen with a grid of exam topics" />
-
-## Mochi for Windows
-
-A Windows port of Mochi, a little pixel pet from a Mac app. It walks along the taskbar, you can pick it up and throw it, and it follows along with Claude Code and shows my usage. The usage tracking is adapted from Eli Manning's [Ai-Usage](https://github.com/eli-manning/Ai-Usage). The repo is private for now.
-
-<img src="assets/mochi.png" width="300" alt="Mochi, an orange pixel creature, with a speech bubble saying hi, I'm Mochi" />
