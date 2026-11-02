@@ -27,9 +27,9 @@ The source is private for now, but the [installer is here](https://github.com/cw
 
 I have an Intel NUC running Ubuntu that I'm using to learn DevOps. I was new to the terminal when I started.
 
-<img src="assets/nuc.jpg" width="360" alt="A small black Intel NUC mini PC" />
+<img src="assets/dashboard.png" width="100%" alt="Status dashboard for the server showing an all-clear banner, CPU, memory, disk and temperature readings, a Pi-hole query chart, running containers and backup status" />
 
-<sub>An 8th-gen Intel NUC. Mine's an 11th-gen, but it's the same idea. Not my photo: [Laserlicht](https://commons.wikimedia.org/wiki/File:Intel_NUC8.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), resized.</sub>
+<sub>The dashboard on my server. I hid the blocked domains and renamed my devices for this screenshot.</sub>
 
 Here's what's running on it:
 
