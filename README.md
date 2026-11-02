@@ -1,16 +1,53 @@
 # Hi, I'm Carson
 
-I'm a mechanical engineering student at Cal Baptist, graduating in April 2027 with a minor in Industrial Systems Engineering. Right now I'm an intern on the manufacturing sustaining team at pSemi in San Diego, and at school I tutor statics and TA for thermo. I'm looking for a full-time job in manufacturing, quality or design after I graduate.
+I'm a mechanical engineering student at Cal Baptist, graduating in April 2027. This is where I keep the software I've made. I'm not a programmer by training, so I build these with AI, usually because something was taking me too long.
 
-I'm a mechanical engineer, not a programmer. The code on here was written with AI, usually because something at work or school was taking me too long.
-
-[Portfolio](https://cwoodard3950-cloud.github.io/) · [LinkedIn](https://www.linkedin.com/in/carsonwoodard) · [Email](mailto:carsonwoodard3950@gmail.com)
+My mechanical engineering work is on [my website](https://cwoodard3950-cloud.github.io/). You can also find me on [LinkedIn](https://www.linkedin.com/in/carsonwoodard) or [email me](mailto:carsonwoodard3950@gmail.com).
 
 ## Lab Grader
 
-I grade about 20 thermo lab reports a week, and each one was taking me around 15 minutes. So I made a desktop app that reads a report and suggests a score for each rubric item, along with its reasoning and the part of the report it's looking at. I still check every score, but it's down to about 3 minutes a report.
+<img src="assets/grader.png" width="96" alt="Lab Grader app icon: a page with a green check mark" />
 
-It takes student names, emails and ID numbers out before anything goes to the Claude API. When I'm done, it gives me a file to upload to Canvas. The source is private for now, but the [installer is here](https://github.com/cwoodard3950-cloud/lab-grader-releases/releases/latest).
+I'm a TA for thermo and grade about 20 group lab reports a week. Each one was taking me around 15 minutes, so I made a desktop app to help. It's down to about 3 minutes a report, and I still check every score myself.
+
+You give it the lab's instructions and rubric, then drop in the submissions from Canvas. It matches each file to a lab group, and the Claude API reads each report and suggests a score for every rubric item. Next to each score it shows its reasoning and highlights the part of the report it's talking about, and it marks the ones it's unsure about. I go through them one at a time with the keyboard, approving or changing each score.
+
+Before anything is sent to the API, it removes the cover page and deletes student names, emails and ID numbers from the file. It never touches Canvas directly. When I'm done, it makes a grade file that I upload myself.
+
+A few other things I'm happy with:
+
+- Resubmissions get compared against the group's first attempt, so students only lose points for problems in the original comments or for things that got worse.
+- Grading costs about 5–10¢ a report with the default model.
+- The rubric is editable, so it isn't tied to thermo.
+- It updates itself when I release a new version.
+
+The source is private for now, but the [installer is here](https://github.com/cwoodard3950-cloud/lab-grader-releases/releases/latest).
+
+## Home server
+
+I have an Intel NUC running Ubuntu that I'm using to learn DevOps. I was new to the terminal when I started.
+
+<img src="assets/nuc.jpg" width="360" alt="A small black Intel NUC mini PC" />
+
+<sub>An 8th-gen Intel NUC. Mine's an 11th-gen, but it's the same idea. Not my photo: [Laserlicht](https://commons.wikimedia.org/wiki/File:Intel_NUC8.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), resized.</sub>
+
+Here's what's running on it:
+
+- **Pi-hole** for DNS filtering, in its own Docker Compose stack. All the stacks live in a Git repo, with the passwords kept out of it.
+- **Uptime Kuma** checks the internet connection, the server and Pi-hole, and messages me on Discord when something goes down.
+- **Backups** run every night from cron. A script stops each stack, archives it, starts it again and keeps 14 days of copies. A second script sends new archives to another PC over Tailscale and skips anything it's already sent.
+- **A status dashboard** that AI built for me. It shows live CPU, memory, temperatures and network traffic, plus blocked DNS queries, containers, whether the backups made it across, and up to 30 days of history. The container runs as non-root with a read-only filesystem.
+
+I log in over SSH with keys only, and use Tailscale to reach it from anywhere.
+
+It's taught me some things I wouldn't have thought about. The nightly backup stops Pi-hole for a few seconds, so Kuma logs a tiny outage around 3 AM every night. I also get spikes in router response time even with a strong Wi-Fi signal, and I haven't figured out why yet.
+
+Next on my list:
+
+- Practice restoring a backup, since I haven't actually tried one yet
+- Get an alert when a backup doesn't run
+- Plug in Ethernet and compare it to Wi-Fi
+- Use names and HTTPS instead of port numbers
 
 ## FE Study Feed
 
@@ -18,22 +55,8 @@ I wanted to study for the FE in the time I'd normally spend scrolling on my phon
 
 <img src="assets/feed.png" width="520" alt="FE Study Feed home screen with a grid of exam topics" />
 
-## Home server
+## Mochi for Windows
 
-I have an Intel NUC running Ubuntu that I'm using to learn DevOps. It runs Pi-hole and Uptime Kuma in Docker, messages me on Discord when something goes down, and backs itself up every night to another PC over Tailscale. AI built the status dashboard for me. Next I need to practice actually restoring a backup.
+A Windows port of Mochi, a little pixel pet from a Mac app. It walks along the taskbar, you can pick it up and throw it, and it follows along with Claude Code and shows my usage. The usage tracking is adapted from Eli Manning's [Ai-Usage](https://github.com/eli-manning/Ai-Usage). The repo is private for now.
 
-## Engineering work
-
-Most of what I do isn't code, so it doesn't live on GitHub. The write-ups are on [my portfolio](https://cwoodard3950-cloud.github.io/).
-
-- **[HAPS capstone](https://cwoodard3950-cloud.github.io/#haps):** an 8-person senior project to detect and track fixed-wing drones and launch an interceptor, for NSWC Corona. I started on the airframe and moved over to electrical, which I'm learning from scratch.
-- **[Solderability DOE](https://cwoodard3950-cloud.github.io/#doe) (pSemi):** a JMP experiment on paste-print settings, to make solderability testing on 75 µm bumps more repeatable.
-- **[Reflow root cause](https://cwoodard3950-cloud.github.io/#reflow) (pSemi):** tracked down a wetting failure by profiling the oven with a KIC, then adjusted the setpoints to get back in spec.
-- **[SiP model](https://cwoodard3950-cloud.github.io/#sip) (pSemi):** a SolidWorks model of a flip-chip package, built from GDS files, for simulation in Ansys.
-- **[Gear pump](https://cwoodard3950-cloud.github.io/#pump):** my team of 4 took a 12 V gear pump, rebuilt it in CAD and printed a working one in PLA. It only moved 0.50 L/min against the original's 1.63.
-
-<img src="assets/pump.jpg" width="520" alt="Small 12 V gear pump on a wooden table next to a tape measure" />
-
-## Outside of work
-
-I surf, run, cycle and swim, and I spend a lot of time working on my '02 Ram 2500 Cummins and my dirt bikes. I also shoot film and make things in the shop. One of those was a [ring made from reclaimed 18k gold](https://cwoodard3950-cloud.github.io/#ring).
+<img src="assets/mochi.png" width="300" alt="Mochi, an orange pixel creature, with a speech bubble saying hi, I'm Mochi" />
