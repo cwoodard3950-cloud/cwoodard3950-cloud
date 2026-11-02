@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Diagram of the home server: an Intel NUC running Pi-hole, Uptime Kuma and a custom dashboard in Docker Compose, sending Discord alerts and nightly backups to a second PC over Tailscale">
+<style>
+.s{stroke:#e8eaed;fill:none;stroke-width:2;stroke-linejoin:round}
+.i{stroke:#98a0ab;fill:none;stroke-width:1.5}
+.as{stroke:#f0531c;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.t{stroke:#98a0ab;fill:none;stroke-width:1.5;stroke-dasharray:4 5}
+text{font:500 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#98a0ab}
+.h{font-size:15px;fill:#e8eaed}
+.k{font-size:12px;letter-spacing:1.2px}
+</style>
+<rect x=".5" y=".5" width="799" height="299" rx="12" fill="#14171c" stroke="#2b3038"/>
+<rect class="s" x="32" y="36" width="456" height="228" rx="8"/>
+<text class="k" x="52" y="66">INTEL NUC · UBUNTU · DOCKER COMPOSE</text>
+<rect class="i" x="52" y="84" width="126" height="84" rx="6"/>
+<text class="h" x="66" y="118">Pi-hole</text>
+<text x="66" y="142">DNS filter</text>
+<rect class="i" x="197" y="84" width="126" height="84" rx="6"/>
+<text class="h" x="211" y="118">Uptime Kuma</text>
+<text x="211" y="142">checks</text>
+<rect class="i" x="342" y="84" width="126" height="84" rx="6"/>
+<text class="h" x="356" y="118">Dashboard</text>
+<text x="356" y="142">read-only</text>
+<rect class="t" x="52" y="188" width="416" height="56" rx="6"/>
+<text class="h" x="66" y="222">Nightly backups · kept 14 days</text>
+<path class="as" d="M488 126 H584"/><path class="as" d="M574 116 L584 126 L574 136"/>
+<path class="as" d="M488 216 H584"/><path class="as" d="M574 206 L584 216 L574 226"/>
+<text x="498" y="114">alerts</text>
+<text x="498" y="204">Tailscale</text>
+<rect class="s" x="596" y="92" width="172" height="68" rx="6"/>
+<text class="h" x="614" y="132">Discord</text>
+<rect class="s" x="596" y="182" width="172" height="68" rx="6"/>
+<text class="h" x="614" y="222">Second PC</text>
+</svg>

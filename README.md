@@ -67,9 +67,24 @@ Most of my projects mix CAD and physical parts with software that removes the re
 | [**Miniature gear pump**](https://cwoodard3950-cloud.github.io/#pump) | Measured a purchased 12 V gear pump, rebuilt it in CAD and printed a working copy in PLA. It moved 0.50 L/min against the original's 1.63 and cost 19.9% less, but about 2.6 times as much per unit of flow. Team of 4. |
 | [**SiP package 3D model**](https://cwoodard3950-cloud.github.io/#sip) | A layer-by-layer SolidWorks model of a flip-chip die and bump stack, built from GDS layout files as the input to an Ansys Mechanical thermo-mechanical simulation. |
 | [**Access Storage**](https://cwoodard3950-cloud.github.io/#access) | A hand-cranked, chain-driven carousel that brings overhead garage storage within reach. Junior design, team of 6. |
-| **Home server** | An Intel NUC on Ubuntu where I'm learning DevOps: Pi-hole and Uptime Kuma in Docker Compose, nightly and offsite backups, Discord alerts, and a custom status dashboard. |
 | **Mochi for Windows** | A Windows port of Mochi, a pixel-critter desktop pet that walks along the taskbar and follows along with Claude Code. Its usage tracking is adapted from Eli Manning's [Ai-Usage](https://github.com/eli-manning/Ai-Usage). |
 | [**Gold solitaire ring**](https://cwoodard3950-cloud.github.io/#ring) | Hand-made from reclaimed 18k gold: cast, rolled and annealed. |
+
+## Home server
+
+I run an Intel NUC on Ubuntu to learn DevOps by doing it, starting from being new to the terminal.
+
+<img src="assets/server.svg" width="100%" alt="An Intel NUC running Pi-hole, Uptime Kuma and a custom dashboard in Docker Compose. It sends alerts to Discord and nightly backups to a second PC over Tailscale." />
+
+- **Services as code:** each service is its own Docker Compose stack in a Git repo, with passwords kept out of Git.
+- **Monitoring:** Uptime Kuma watches the internet connection, the server and Pi-hole, and sends alerts to Discord.
+- **Backups:** a nightly cron job stops each stack, archives it, restarts it and keeps 14 days of copies. A second script sends new archives to another PC over Tailscale, and it skips anything already sent.
+- **Remote access:** SSH with key login only, and Tailscale to connect from anywhere.
+- **Custom dashboard, built with AI:** one page for live CPU, memory, temperature and network stats, blocked DNS queries, containers, backup status and up to 30 days of history. Its container runs as non-root with a read-only filesystem and no Linux capabilities.
+
+**Next on my list:** practice restoring a backup, get alerted when a backup doesn't run, compare Wi-Fi and Ethernet response times, and move from port numbers to names with HTTPS.
+
+`Ubuntu` `Docker Compose` `Pi-hole` `Uptime Kuma` `Tailscale` `cron` `Bash`
 
 ## Experience
 
